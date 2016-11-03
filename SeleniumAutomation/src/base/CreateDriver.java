@@ -1,18 +1,30 @@
 package base;
 
+import java.util.ResourceBundle;
+
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 public class CreateDriver {
 	
-	public ChromeDriver driver;
+	public WebDriver driver;
 	
 	@BeforeMethod
 	public void bMet()
 	{
-		System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
-		driver = new ChromeDriver();
+		ResourceBundle rb = ResourceBundle.getBundle("Config");
+		if(rb.getString("browser").equalsIgnoreCase("firefox"))
+		{
+			driver = new FirefoxDriver();
+		}
+		else if(rb.getString("browser").equalsIgnoreCase("chrome"))
+		{
+			System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
+			driver = new ChromeDriver();
+		}
 		driver.get("https://www.facebook.com/");
 	}
 	
