@@ -16,8 +16,9 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/paramjeet kaur/Downloads/reportng-1.1.4/reportng-1.1.4.jar"/>
-	<classpathentry kind="lib" path="C:/Users/paramjeet kaur/Downloads/reportng-1.1.4/velocity-dep-1.4.jar"/>
-	<classpathentry kind="lib" path="C:/Users/paramjeet kaur/Downloads/guice-3.0.jar.zip"/>
+	<classpathentry kind="lib" path="C:/Users/paramjeet kaur/New folder/SeleniumAutomation/Jars/guice-3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/paramjeet kaur/New folder/SeleniumAutomation/Jars/jxl.jar"/>
+	<classpathentry kind="lib" path="C:/Users/paramjeet kaur/New folder/SeleniumAutomation/Jars/reportng-1.1.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/paramjeet kaur/New folder/SeleniumAutomation/Jars/velocity-dep-1.4.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

@@ -2,14 +2,19 @@ package pages;
 
 import java.util.ResourceBundle;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+
+import assertions.Verify;
 
 public class Login {
 	
-	ChromeDriver driver;
+	WebDriver driver;
 	ResourceBundle rb;
 	
-	public Login(ChromeDriver driver)
+	public Login(WebDriver driver)
 	{
 		this.driver = driver;
 		rb = ResourceBundle.getBundle("Element");
@@ -17,7 +22,9 @@ public class Login {
 	
 	public void enterUserName(String uName)
 	{
-		driver.findElementById(rb.getString("login_user_id")).sendKeys(uName);
+		driver.findElement(By.id(rb.getString("login_user_id"))).sendKeys(uName);
+		boolean actResult = Verify.vaildatePageURL(driver, "https://www.facebook.com");
+		Assert.assertTrue(actResult,"[ERROR - URL Not Matching]"+" http://www.facebook.com");
 	}
 
 }
