@@ -20,5 +20,6 @@
 	<classpathentry kind="lib" path="C:/Users/paramjeet kaur/New folder/SeleniumAutomation/Jars/jxl.jar"/>
 	<classpathentry kind="lib" path="C:/Users/paramjeet kaur/New folder/SeleniumAutomation/Jars/reportng-1.1.4.jar"/>
 	<classpathentry kind="lib" path="C:/Users/paramjeet kaur/New folder/SeleniumAutomation/Jars/velocity-dep-1.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/paramjeet kaur/New folder/SeleniumAutomation/Jars/log4j.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
