@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.logging.Logger;
 
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
@@ -19,6 +20,9 @@ public class TC_001 extends CreateDriver {
 	@Test
 	public void tCase1() throws IOException
 	{
+		
+		Logger l = Logger.getLogger("TC_001.class");
+		
 		Login login = new Login(driver);
 		login.enterUserName("Hello");
 		
