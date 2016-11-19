@@ -23,8 +23,15 @@ public class Login {
 	public void enterUserName(String uName)
 	{
 		driver.findElement(By.id(rb.getString("login_user_id"))).sendKeys(uName);
-		boolean actResult = Verify.vaildatePageURL(driver, "https://www.facebook.com");
-		Assert.assertTrue(actResult,"[ERROR - URL Not Matching]"+" http://www.facebook.com");
+		//boolean actResult = Verify.vaildatePageURL(driver, "https://www.facebook.com");
+		//Assert.assertTrue(actResult,"[ERROR - URL Not Matching]"+" http://www.facebook.com");
+	}
+	
+	public void enterPassword(String pass)
+	{
+		driver.findElement(By.id(rb.getString("login_pass_id"))).sendKeys(pass);
+		//boolean actResult = Verify.vaildatePageURL(driver, "https://www.facebook.com");
+		//Assert.assertTrue(actResult,"[ERROR - URL Not Matching]"+" http://www.facebook.com");
 	}
 
 }

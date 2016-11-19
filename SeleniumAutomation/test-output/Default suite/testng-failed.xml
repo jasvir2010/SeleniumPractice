@@ -3,18 +3,7 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="testcases.TC_001"/>
+      <class name="testcases.TC_002"/>
     </classes>
   </test> <!-- Default test -->
-  <test name="Default test(failed)">
-    <classes>
-      <class name="testcases.TC_001">
-        <methods>
-          <include name="aMet"/>
-          <include name="bMet"/>
-          <include name="tCase1"/>
-        </methods>
-      </class> <!-- testcases.TC_001 -->
-    </classes>
-  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
